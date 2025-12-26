@@ -1,0 +1,26 @@
+version: 1
+meta:
+    template:
+        id: gradle
+    inputs:
+        gradle.runner: .\gradlew.bat
+        template.id: gradle
+checks:
+    - id: template:gradle:ae56b967eb2c
+      source: template:gradle
+      name: tests
+      run: .\gradlew.bat test
+      shell: cmd
+    - id: template:gradle:11c61f658c5d
+      source: template:gradle
+      name: build
+      run: .\gradlew.bat build
+      shell: cmd
+insults:
+    mode: snarky
+    file: .buildbouncer/assets/insults/default.json
+    locale: en
+banter:
+    enabled: true
+    file: .buildbouncer/assets/banter/default.json
+    locale: en

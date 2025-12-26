@@ -1,0 +1,52 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+.claude/
+
+# Kotlin
+.kotlin/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Server data
+game-server/data/profile/
+game-server/logs/
+
+# Cache files (keep the directory structure, ignore the actual cache files)
+game-server/data/cache/*.dat
+game-server/data/cache/*.idx
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
